@@ -86,7 +86,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4">Information We Don't Collect</h2>
+            <h2 className="text-2xl font-bold mb-4">Information We Don&apos;t Collect</h2>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li>Your conversion data or file contents</li>
               <li>Personal information (name, email, etc.)</li>
@@ -110,7 +110,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-bold mb-4">Local Storage</h2>
             <p className="text-muted-foreground">
-              We may use your browser's localStorage to remember user preferences (such as theme selection). This data is stored only on your device and is not transmitted to any server.
+              We may use your browser&apos;s localStorage to remember user preferences (such as theme selection). This data is stored only on your device and is not transmitted to any server.
             </p>
           </section>
 
@@ -124,7 +124,7 @@ export default function PrivacyPage() {
           <section>
             <h2 className="text-2xl font-bold mb-4">Security</h2>
             <p className="text-muted-foreground">
-              Since all processing happens in your browser and we don't collect data, there is no server-side security risk. We recommend using HTTPS and keeping your browser updated for maximum security.
+              Since all processing happens in your browser and we don&apos;t collect data, there is no server-side security risk. We recommend using HTTPS and keeping your browser updated for maximum security.
             </p>
           </section>
 

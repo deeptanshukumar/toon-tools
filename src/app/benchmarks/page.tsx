@@ -155,7 +155,7 @@ export default function BenchmarksPage() {
         <section className="bg-muted/30 rounded-2xl p-8">
           <h2 className="text-2xl font-bold mb-4">Methodology</h2>
           <div className="space-y-3 text-muted-foreground">
-            <p><strong>Tokenizer:</strong> OpenAI's cl100k_base (GPT-3.5 & GPT-4)</p>
+            <p><strong>Tokenizer:</strong> OpenAI&apos;s cl100k_base (GPT-3.5 & GPT-4)</p>
             <p><strong>Test Environment:</strong> Chrome 120, M1 MacBook Pro</p>
             <p><strong>Data Sources:</strong> Real-world API responses, database exports, and configuration files</p>
             <p><strong>Measurements:</strong> Average of 1000 conversions per dataset</p>
