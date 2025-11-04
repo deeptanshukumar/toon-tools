@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://toontools.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://toontools-fy1i90t9e-deeptanshu-kumars-projects.vercel.app'
   
   const routes = [
     '',

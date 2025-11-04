@@ -1,10 +1,12 @@
 import { Metadata } from 'next'
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://toontools-fy1i90t9e-deeptanshu-kumars-projects.vercel.app'
+
 export const siteConfig = {
   name: 'TOON Tools',
   description: 'Free TOON converter tools - Reduce LLM token usage by 30-60%. Convert JSON, CSV, YAML, XML to TOON format. 100% client-side, privacy-first.',
-  url: 'https://toontools.com',
-  ogImage: 'https://toontools.com/og-image.png',
+  url: baseUrl,
+  ogImage: `${baseUrl}/og-image.png`,
   links: {
     twitter: 'https://twitter.com/toontools',
     github: 'https://github.com/johannschopplich/toon',
