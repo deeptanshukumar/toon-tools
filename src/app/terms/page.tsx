@@ -47,7 +47,7 @@ export default function TermsPage() {
             <h2 className="text-2xl font-bold mb-4">3. Disclaimer</h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                TOON Tools is provided "as is" without warranty of any kind, express or implied. We make no warranties regarding:
+                TOON Tools is provided &quot;as is&quot; without warranty of any kind, express or implied. We make no warranties regarding:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Accuracy or reliability of conversions</li>

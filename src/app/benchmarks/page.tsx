@@ -51,9 +51,9 @@ export default function BenchmarksPage() {
       <div className="border-b bg-muted/30">
         <div className="container py-12">
           <h1 className="text-4xl font-bold mb-4">Performance Benchmarks</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl">
-            Real-world data showing TOON's token savings and performance advantages
-          </p>
+                                          <p className="text-sm text-muted-foreground">
+                    Benchmark your own data to see TOON&apos;s performance in your specific use case.
+                  </p>
         </div>
       </div>
 
