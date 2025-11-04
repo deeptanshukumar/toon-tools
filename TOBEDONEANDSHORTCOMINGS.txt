@@ -1,0 +1,30 @@
+### Shortcomings of TOON
+
+Based on replies to the original post, independent benchmarks, and user feedback, here are the key limitations identified for TOON (Token-Oriented Object Notation). These primarily revolve around performance in non-ideal scenarios, LLM compatibility, and comparisons to established formats.
+
+| Shortcoming | Description | Sources/Examples |
+|-------------|-------------|------------------|
+| **Inefficient for non-uniform data** | TOON excels at uniform arrays/objects (e.g., consistent keys/properties) but becomes less token-efficient or even worse than alternatives like minified JSON or CSV when data has missing properties, varying lengths, or irregular structures. For example, adding objects with incomplete fields increases token usage disproportionately. | Chase Adams (@curiouslychase) benchmarks; Sufrócrata (@sufrocrata) on non-tabular data. |
+| **Unfair benchmark comparisons** | Many token savings claims compare against pretty-printed (indented) JSON, ignoring that minified JSON removes whitespace and is the real baseline. This inflates TOON's apparent efficiency by 20-40% in some cases. | Chase Adams multiple replies; video on benchmarking pitfalls. |
+| **Lower LLM accuracy and understanding** | Despite fewer tokens, TOON shows reduced retrieval accuracy (e.g., 43-47% vs. 50-62% for JSON/YAML) in tabular and nested data tasks. Models struggle more due to lack of training data on the format, leading to potential misinterpretation or hallucinations. Nested structures perform especially poorly. | Improving Agents blog benchmarks (GPT-5 nano tests); Denis (@devlato), Matt Stallone (@mjstallone). |
+| **Challenges with outputs and agentic workflows** | As a non-standard format, it's harder for LLMs to generate valid TOON reliably (e.g., estimating array lengths upfront can cause early stops or errors). Better suited for inputs only; outputs favor JSON for scheming/validation. | Allison (@alwaysallison); Thomas Ahle (@thomasahle); RackCity (@RackCityBC) on agentic outputs. |
+| **Risk of data loss or entropy issues** | Encoding may introduce subtle losses in complex/nested data; lower entropy (predictability) could make prompts less "focused" for LLMs compared to higher-entropy formats like JSON. | Kenneth Eversole (@kennetheversole). |
+| **Format proliferation** | Adds yet another notation when YAML/CSV preprocessing could achieve similar savings without learning a new spec. | Mortoshi (@HDergler); IsachsenCoder (@IsachsenCoder). |
+| **Port compatibility gaps** | Some language ports (e.g., .NET) lack full spec support or compatibility with older runtimes like .NET6. | Zunia (@0xZunia). |
+
+Overall, TOON shines for uniform, input-focused prompts but risks accuracy trade-offs in diverse real-world data, where familiarity with JSON/YAML matters more than raw token savings.
+
+### To-Be-Done Items
+
+Users and testers highlighted several areas for improvement, many of which the creator (@jschopplich) is already addressing (e.g., benchmarks). These focus on validation, extensibility, and adoption.
+
+| To-Do | Description | Sources/Examples |
+|-------|-------------|------------------|
+| **Comprehensive benchmarks** | Expand evals for LLM interpretation (vs. JSON/XML/YAML/CSV), retrieval accuracy on large/non-uniform datasets, entropy impacts, and performance on nested/time-series data. Include minified baselines and real workloads. | Denis (@devlato), Lorenzo (@_elledienne), Agam (@mail4agam), Eric Lee (@sdusteric), Hang Huang (@HH_HangHuang), Denykgg (@Denykgg1), zeØ_Øn256 (@zeon256); ongoing per creator replies. |
+| **Language ports and compatibility** | Full C++ support; update .NET port for spec 1.2 and .NET6 compatibility; Python enhancements if needed. | Jo (@t_jona96); Zunia (@0xZunia). |
+| **Tool integrations** | Plug into agentic frameworks (e.g., Claude Code, Codex, DSPy, Factory); static file converters for bulk JSON-to-TOON migration. | Pedro (@pedroapfilho); Wes Eklund (@WesEklund); Wild (@BeWildAF). |
+| **Documentation and tutorials** | Guides on prompting LLMs with TOON (e.g., "how to instruct models"); optimizations like datetime compression. | Gautham Pai (@gauthampai); Tomas Kapler (@tkapler). |
+| **Extensions for specialized data** | Native support for time-series (e.g., RLE integration) and deeper nesting without accuracy drops. | Tengis (@tengis_io). |
+| **Community features** | Set up GitHub sponsorships; decode shipped, but test edge cases for round-trip fidelity. | Zack Chapple (@Zackary_Chapple); Rohola Zandie (@roholazandie). |
+
+These items could solidify TOON's niche for token-optimized inputs. The creator has been responsive in threads, shipping updates like decode quickly—check the repo for progress: https://github.com/toon-format/toon. If you're testing, tools like Chase's playground (https://www.curiouslychase.com/playground/format-tokenization-exploration) or Deeptanshu's converter (https://toontools.vercel.app) are great starts.
