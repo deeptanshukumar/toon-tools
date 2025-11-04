@@ -26,7 +26,7 @@ export const metadata: Metadata = constructMetadata({
     'YAML to TOON',
     'XML to TOON',
   ],
-  canonical: 'https://toontools.com',
+  canonical: 'https://toontools.vercel.app',
   image: '/og-image.png',
 })
 
