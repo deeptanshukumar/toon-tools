@@ -1,0 +1,58 @@
+{
+  "name": "toon-tools",
+  "version": "1.0.0",
+  "description": "Comprehensive TOON (Token-Oriented Object Notation) tools website - the iLovePDF of TOON conversions",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@toon-format/toon": "^0.7.3",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "fast-xml-parser": "^4.5.0",
+    "gpt-tokenizer": "^2.5.2",
+    "js-yaml": "^4.1.0",
+    "lucide-react": "^0.454.0",
+    "monaco-editor": "^0.45.0",
+    "next": "^15.0.3",
+    "next-themes": "^0.4.3",
+    "papaparse": "^5.4.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.13.3",
+    "tailwind-merge": "^2.5.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.9.3",
+    "@types/papaparse": "^5.3.14",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.15.0",
+    "eslint-config-next": "^15.0.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "toon",
+    "token-oriented",
+    "object-notation",
+    "json-converter",
+    "llm-optimization",
+    "token-savings",
+    "data-format",
+    "converter-tools"
+  ],
+  "author": "TOON Tools",
+  "license": "MIT"
+}

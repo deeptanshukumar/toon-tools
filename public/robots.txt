@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://toontools.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 0
+
+# Disallow admin paths (if any in future)
+Disallow: /api/
+Disallow: /_next/
