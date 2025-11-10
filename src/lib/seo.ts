@@ -30,6 +30,15 @@ export function constructMetadata({
   canonical?: string
 } = {}): Metadata {
   const defaultKeywords = [
+    'toon tools',
+    'best toon tool',
+    'comprehensive toon solution',
+    'token optimized object notation',
+    'token oriented object notation',
+    'toon encode',
+    'toon object notation',
+    'toon syntax',
+    'cl100k_base tokenizer',
     'TOON converter',
     'JSON to TOON',
     'token optimization',
@@ -40,6 +49,9 @@ export function constructMetadata({
     'TOON format',
     'Token-Oriented Object Notation',
     'reduce AI costs',
+    'toon encoder decoder',
+    'free toon converter online',
+    'site:vercel.app toon',
   ]
 
   return {

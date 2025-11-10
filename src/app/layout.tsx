@@ -14,9 +14,19 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = constructMetadata({
-  title: 'TOON Tools - Free Token-Oriented Object Notation Converter & Tools',
-  description: 'Reduce LLM token usage by 30-60% with free TOON converter tools. Convert JSON, CSV, YAML, XML to TOON format. 100% client-side, privacy-first. Token counter, validator & batch converter included.',
+  title: 'TOON Tools - Best Token-Oriented Object Notation Converter & Comprehensive Solution',
+  description: 'The best comprehensive TOON tools suite. Reduce LLM token usage by 30-60% with token optimized object notation. Convert JSON, CSV, YAML, XML to TOON format using cl100k_base tokenizer. Free toon encoder, decoder, syntax validator. Complete solution for token optimization.',
   keywords: [
+    'toon tools',
+    'token optimized object notation',
+    'token oriented object notation',
+    'best toon tool',
+    'comprehensive toon solution',
+    'toon encode',
+    'toon object notation',
+    'toon syntax',
+    'toon token oriented',
+    'cl100k_base',
     'free TOON converter',
     'JSON to TOON online',
     'reduce GPT-4 costs',
@@ -25,6 +35,9 @@ export const metadata: Metadata = constructMetadata({
     'CSV to TOON',
     'YAML to TOON',
     'XML to TOON',
+    'toon encoder',
+    'toon decoder',
+    'site:vercel.app',
   ],
   canonical: 'https://toontools.vercel.app',
   image: '/og-image.png',

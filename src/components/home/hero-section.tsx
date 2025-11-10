@@ -32,16 +32,16 @@ export function HeroSection() {
           
           <h1 className="text-center text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
             <span className="block text-foreground mb-2">
-              Token-Optimized
+              Best TOON Tools
             </span>
             <span className="block text-gradient text-gradient-dark">
-              Data Conversion
+              Comprehensive Solution
             </span>
           </h1>
           
           {/* Subheading */}
           <p className="text-center text-lg sm:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            Convert JSON, CSV, YAML, and XML to TOON format. 
+            The best token-oriented object notation converter. Encode and decode JSON, CSV, YAML, XML to token-optimized TOON format using cl100k_base tokenizer. 
             Reduce LLM token usage by up to{' '}
             <span className="text-green-600 dark:text-green-400 font-semibold">60%</span>
             {' '}and save on API costs.
