@@ -1,8 +1,12 @@
 # TOON Tools - Comprehensive Token-Oriented Object Notation Toolsuite
 
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://toontools.vercel.app)
+[![GitHub](https://img.shields.io/github/stars/deeptanshukumar/toon-tools?style=social)](https://github.com/deeptanshukumar/toon-tools)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **The "iLovePDF of TOON Tools"** - A complete suite of conversion tools for Token-Oriented Object Notation (TOON), designed to help AI developers reduce LLM token usage by 30-60%.
 
-🌐 **Live Demo:** [toontools.com](https://toontools.com) *(coming soon)*
+🌐 **Live Demo:** [toontools.vercel.app](https://toontools.vercel.app)
 
 ## 🚀 Features
 
