@@ -39,11 +39,32 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="google-site-verification" content="c1NrV2S56uUJCt1IxsATy8eXspQXRwLGzIA6BniCIrs" />
+        <meta name="application-name" content="TOON Tools" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'TOON Tools',
+              url: 'https://toontools.vercel.app/',
+              publisher: {
+                '@type': 'Organization',
+                name: 'TOON Tools',
+                logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://toontools.vercel.app/icon.svg',
+                },
+              },
+            }),
+          }}
+        />
       </head>
       <body className={`${inter.className} ${inter.variable}`}>
         <ThemeProvider
