@@ -212,5 +212,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 📖 Documentation: [View docs](https://toontools.com/docs)
 
 ---
+NOTE: I'm not a web developer, this project was built using ai as an experiment to make a tool for this new format called [TOON Format](https://github.com/johannschopplich/toon) and a good tool, devs can use. I also built it for fun to see how far ai can build with some human intervention regarding design and choices. This was indeed quite fun to build!
 
-Built with ❤️ for the AI community | Powered by [TOON Format](https://github.com/johannschopplich/toon)
+REPO for TOON [TOON Format](https://github.com/johannschopplich/toon) 
