@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-const baseUrl = 'https://toontools.vercel.app'
+const baseUrl = 'https://toontools.app'
 
 export const siteConfig = {
   name: 'TOON Tools',

@@ -39,7 +39,7 @@ export const metadata: Metadata = constructMetadata({
     'toon decoder',
     'site:vercel.app',
   ],
-  canonical: 'https://toontools.vercel.app',
+  canonical: 'https://toontools.app',
   image: '/og-image.png',
 })
 
@@ -66,13 +66,13 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
               name: 'TOON Tools',
-              url: 'https://toontools.vercel.app/',
+              url: 'https://toontools.app/',
               publisher: {
                 '@type': 'Organization',
                 name: 'TOON Tools',
                 logo: {
                   '@type': 'ImageObject',
-                  url: 'https://toontools.vercel.app/icon.svg',
+                  url: 'https://toontools.app/icon.svg',
                 },
               },
             }),
