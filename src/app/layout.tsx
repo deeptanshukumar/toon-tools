@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/toaster'
 import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { constructMetadata } from '@/lib/seo'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const inter = Inter({ 
@@ -92,6 +93,7 @@ export default function RootLayout({
             <Footer />
           </div>
           <Toaster />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
